@@ -1,5 +1,6 @@
+
 const cards = [
-	{ img: "initial", src: "./images/0.png" },
+	{ img: "background", src: "./images/0.png" },
 	{ img: 1, src: "./images/1.jpeg" },
 	{ img: 2, src: "./images/1.jpeg" },
 	{ img: 3, src: "./images/2.jpeg" },
@@ -11,7 +12,22 @@ const cards = [
 	{ img: 9, src: "./images/5.jpeg" },
 	{ img: 10, src: "./images/5.jpeg" },
 ];
+
+const grid = document.querySelector(".grid");
 let flippedCards = [];
+let clickEnabled = true;
+
+for (let i = 1; i < 17; i++) {
+	let card = document.createElement("img");
+	setInitialBackground(card);
+	card.setAttribute("data-id", i);
+	grid.appendChild(card);
+	card.addEventListener("click", flipCard);
+}
+
+function setInitialBackground(card) {
+	card.setAttribute("src", "./images/0.png");
+}
 
 function flipCard() {
   if (clickEnabled === true){
@@ -36,17 +52,3 @@ function checkForMatch() {
   clickEnabled = true;
 }
 
-const grid = document.querySelector(".grid");
-let clickEnabled = true;
-
-for (let i = 1; i < 17; i++) {
-	let card = document.createElement("img");
-	setInitialBackground(card);
-	card.setAttribute("data-id", i);
-	grid.appendChild(card);
-	card.addEventListener("click", flipCard);
-}
-
-function setInitialBackground(card){
-  card.setAttribute("src", "./images/0.png");
-}
