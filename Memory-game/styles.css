@@ -2,7 +2,7 @@ body{
   background-color:rgba(0, 0, 0, 0.856);
   display:flex;
   justify-content:center;
-  align-items: center;
+  margin-top: 3rem;
 }
 
 .grid{
@@ -17,4 +17,10 @@ img{
   height:150px;
   padding:4px;
   cursor: pointer;
+  border-radius: 6px;
+  transition: transform .5s;
+}
+
+.flip {
+  transform: rotateY(180deg);
 }
