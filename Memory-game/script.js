@@ -1,5 +1,5 @@
 let cards = [
-	{ img: 1, src: "./images/1.jpeg" },
+  { img: 1, src: "./images/1.jpeg" },
 	{ img: 2, src: "./images/1.jpeg" },
 	{ img: 3, src: "./images/2.jpeg" },
 	{ img: 4, src: "./images/2.jpeg" },
