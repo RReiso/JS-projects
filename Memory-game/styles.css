@@ -1,60 +1,60 @@
 body {
-	background-color: rgba(0, 0, 0, 0.856);
-	display: flex;
-	justify-content: center;
-	margin-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.856);
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .grid {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-	width: 650px;
+  width: 650px;
 }
 
 img {
-	width: 150px;
-	height: 150px;
-	padding: 4px;
-	cursor: pointer;
-	border-radius: 6px;
-	transition: transform 0.5s;
+  width: 150px;
+  height: 150px;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.5s;
 }
 
 .flip {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-@media (max-width: 540px){
-  .grid{
-    width:500px;
+@media (max-width: 540px) {
+  .grid {
+    width: 500px;
   }
 
-  img{
+  img {
     width: 100px;
-	height: 100px;
+    height: 100px;
   }
 }
 
-@media (max-width: 415px){
-  .grid{
-    width:350px;
+@media (max-width: 415px) {
+  .grid {
+    width: 350px;
   }
 
-  img{
+  img {
     width: 70px;
-	height: 70px;
+    height: 70px;
   }
 }
 
-@media (max-width: 320px){
-  .grid{
-    width:300px;
+@media (max-width: 320px) {
+  .grid {
+    width: 300px;
   }
 
-  img{
+  img {
     width: 60px;
-	height: 60px;
+    height: 60px;
   }
 }
